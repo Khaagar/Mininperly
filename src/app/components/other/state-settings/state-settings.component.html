@@ -1,0 +1,8 @@
+<div id="state-container" class="d-flex flex-column justify-content-around">
+    <button (click)="toggleDetails()" class="btn btn-primary btn-sm">
+      {{detailsHidden? 'SHOW DETAILS' : 'HIDE DETAILS'}}
+    </button>
+    <button (click)="toggleCall()" class="btn btn-primary btn-sm" [class.btn-danger]="isConversation">
+      {{isConversation? 'END CONVERSATION' : 'START CONVERSATION'}}
+    </button>
+</div>
